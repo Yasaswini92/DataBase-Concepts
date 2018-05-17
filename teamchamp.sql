@@ -1,4 +1,4 @@
-prompt Authors: Shivani Bimavarapu and Bhavani Manthena
+
 select temp.tname as TNAME, points as PTS, rank as RANK, cfirst|| ' '||clast as COACH from(
 select sum(rank) as points, tname, row_number() over(order by sum(rank) desc) as rank from ( 
 select 
