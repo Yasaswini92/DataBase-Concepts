@@ -1,4 +1,4 @@
-prompt Authors: Shivani Bimavarapu and Bhavani Manthena
+
 with t2 as (
 select attempt.cname,attempt.ename,competitor.igan,Concat(Concat(competitor.bfirst,' '),competitor.blast) as competitor,
 competitor.agegroup,greatest((attempt.j1a1+attempt.j2a1)/2.0,(attempt.j1a2+attempt.j2a2)/2.0) as score,competitor.tname 
